@@ -1,0 +1,74 @@
+.australia-issues {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+    margin: 50px 0;
+  }
+  &__title {
+    font-size: xx-large;
+    letter-spacing: 1px;
+    text-align: center;
+    color: lightblue;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    color: #000000;
+    border-radius: 10px;
+    padding: 20px 20px 50px;
+    background-image: url(../../../../assets/images/Australia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 10px lightblue;
+    &:hover {
+      box-shadow: 1px 1px 10px darkblue;
+    }
+  }
+  &__text {
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    flex-grow: 1;
+  }
+  &__input {
+    width: 350px;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: blue;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 1px 1px 10px #000000;
+    &.right {
+      background-color: limegreen;
+      box-shadow: 1px 1px 10px green;
+    }
+    &.mistake {
+      background-color: red;
+      box-shadow: 1px 1px 10px red;
+    }
+    &::placeholder {
+      font-weight: normal;
+      color: darkblue;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .australia-issues {
+    &__wrapper {
+      justify-content: center;
+    }
+  }
+}

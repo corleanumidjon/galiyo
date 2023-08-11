@@ -1,0 +1,109 @@
+.atmosphere-crossword-wrapper {
+    position: relative;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 200px;
+    background-image: url("../../../../assets/images/mapa.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.atmosphere-crossword-box {
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+
+    & .crossword {
+        position: relative;
+    }
+
+    & rect{
+        display: none;
+    }
+
+    & .clue-cell {
+        & rect {
+            display: inline-block;
+        } 
+    }
+
+    & .header {
+        display: none;
+    }
+
+    & .kCzJEc .direction div {
+        padding: 7px;
+        border-radius: 5px;
+        // margin-top: 15px;   
+    }
+
+    & .kCzJEc .direction {
+        margin-bottom: 0;
+    }
+    & .clues {
+        position: absolute;
+        bottom: 40px;
+        left: 20px;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    & .bHTMhE {
+        background-color: rgb(63, 93, 203);
+    }
+}
+.correct-cell {
+    background-color: green;
+}
+.atmosphere-crossword-btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    border: none;
+    padding: 10px 20px;
+    background-color: #56c729;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 990px) {
+    .atmosphere-crossword-wrapper {
+        padding-bottom: 300px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .atmosphere-crossword-wrapper {
+        padding-bottom: 400px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .atmosphere-crossword-wrapper {
+        padding-bottom: 500px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .atmosphere-crossword-wrapper {
+        padding-bottom: 600px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .atmosphere-crossword-wrapper {
+        padding-bottom: 700px;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .atmosphere-crossword-wrapper {
+        padding-bottom: 800px;
+    }
+}

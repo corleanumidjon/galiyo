@@ -1,0 +1,87 @@
+.drag-drop-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.drag-drop-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 615px;
+    width: 100%;
+    grid-gap:  20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+
+    &:first-child {
+        margin-right: 20px;
+    }
+    
+    &.have-img {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        & .drag-drop-card {
+            padding: 0;
+            overflow: hidden;
+            flex-grow: 0;
+        }
+    }
+}
+
+.drag-drop-card {
+    position: relative;
+    flex-grow: 1;
+    padding: 10px 20px;
+    color: #ffff;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+    box-shadow: 10px 10px 10px 2px #00000074;
+    cursor: grab;
+
+    &:active {
+        cursor: grabbing;
+    }
+
+    &:hover {
+        box-shadow: none;
+        border: 3px solid #000;
+    }
+}
+
+.drag-drop-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.drag-drop-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.drag-drop-win-text {
+    font-size: 40px;
+    color: #53d706;
+    text-align: center;
+}
+
+.drag-drop-again-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+    background-color: #45b603;
+    background-image: url("../../assets/images/again-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}

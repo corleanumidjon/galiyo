@@ -1,0 +1,40 @@
+.pacific-ocean-continue-box {
+    padding: 15px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    background-color: #fbfbaf;
+}
+.pacific-ocean-continue-text {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.pacific-ocean-continue-input {
+    margin: 8px 5px;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid;
+
+    &.right {
+        background-color: green;
+    }
+
+    &.mistake {
+        background-color: red;
+    }
+}
+
+.pacific-ocean-continue-btn {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: none;
+    background-color: #ffc107;
+    border-radius: 10px;
+    cursor: pointer;
+}

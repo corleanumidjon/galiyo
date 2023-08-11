@@ -1,0 +1,66 @@
+.azimuth-issues {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    margin: 60px 0;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    border-radius: 20px;
+    padding: 20px 20px 50px;
+    background-image: url(../../../../assets/images/Azimuth.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 10px lightblue;
+    &:hover {
+      box-shadow: 1px 1px 10px darkblue;
+    }
+  }
+  &__text {
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: darkblue;
+  }
+  &__input {
+    width: 50%;
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: darkblue;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 1px 1px 10px blue;
+    &.right {
+      background-color: limegreen;
+      box-shadow: 1px 1px 10px green;
+    }
+    &.mistake {
+      background-color: red;
+      box-shadow: 1px 1px 10px red;
+    }
+    &::placeholder {
+      font-weight: normal;
+      color: blue;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .azimuth-issues {
+    &__input {
+      width: 75%;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .azimuth-issues {
+    &__input {
+      width: 100%;
+    }
+  }
+}
